@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://biotvfvg0nmui"]
+
+[ext_resource type="Script" uid="uid://bn8vbct5v1asw" path="res://Scenes/Entities/Player/camera_controller.gd" id="1_ywmoi"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_ywmoi"]
+
+[node name="CameraController" type="SpringArm3D" unique_id=1523088389]
+shape = SubResource("SphereShape3D_ywmoi")
+spring_length = 6.5
+script = ExtResource("1_ywmoi")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=783174317]
+current = true
