@@ -40,10 +40,10 @@ materials/extract_path=""
 _subresources={
 "animations": {
 "1H_Melee_Attack_Chop": {
-"save_to_file/enabled": false,
-"save_to_file/fallback_path": "",
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://graphics/characters/godette/Animations/chop.res",
 "save_to_file/keep_custom_tracks": true,
-"save_to_file/path": "res://graphics/characters/godette/animations/chop.res",
+"save_to_file/path": "uid://7d7l32u6v2lo",
 "settings/loop_mode": 0,
 "slice_1/end_frame": 0,
 "slice_1/loop_mode": 0,
@@ -2096,10 +2096,10 @@ _subresources={
 "slices/amount": 0
 },
 "1H_Melee_Attack_Slice_Horizontal": {
-"save_to_file/enabled": false,
-"save_to_file/fallback_path": "",
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://graphics/characters/godette/Animations/slice.res",
 "save_to_file/keep_custom_tracks": true,
-"save_to_file/path": "res://graphics/characters/godette/animations/slice.res",
+"save_to_file/path": "uid://w58wbcuyqnoc",
 "settings/loop_mode": 0,
 "slice_1/end_frame": 0,
 "slice_1/loop_mode": 0,
@@ -12376,10 +12376,10 @@ _subresources={
 "slices/amount": 0
 },
 "Spellcast_Shoot": {
-"save_to_file/enabled": false,
-"save_to_file/fallback_path": "",
+"save_to_file/enabled": true,
+"save_to_file/fallback_path": "res://graphics/characters/godette/Animations/spellcast.res",
 "save_to_file/keep_custom_tracks": true,
-"save_to_file/path": "res://graphics/characters/godette/animations/spellcast.res",
+"save_to_file/path": "uid://fk8tbije3fgi",
 "settings/loop_mode": 0,
 "slice_1/end_frame": 0,
 "slice_1/loop_mode": 0,
