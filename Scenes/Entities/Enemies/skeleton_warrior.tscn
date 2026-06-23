@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bl0io16ce1ma"]
+
+[ext_resource type="PackedScene" uid="uid://k70kgwqurk4n" path="res://Scenes/Entities/Enemies/enemy.tscn" id="1_q5ybo"]
+[ext_resource type="PackedScene" uid="uid://bks0ynvp57mq1" path="res://graphics/characters/skeleton warrior/Skeleton_Warrior.glb" id="2_m8mg6"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_hjk84"]
+
+[node name="SkeletonWarrior" unique_id=1703689699 instance=ExtResource("1_q5ybo")]
+
+[node name="CollisionShape3D" parent="." index="0" unique_id=1177060921]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CapsuleShape3D_hjk84")
+
+[node name="Skeleton_Warrior" parent="." index="3" unique_id=1413802480 instance=ExtResource("2_m8mg6")]

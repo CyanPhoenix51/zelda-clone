@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://k70kgwqurk4n"]
+
+[ext_resource type="Script" uid="uid://cidfq2n5bqbnu" path="res://Scenes/Entities/Enemies/enemy.gd" id="1_bcqat"]
+
+[node name="Enemy" type="CharacterBody3D" unique_id=1703689699]
+collision_layer = 4
+collision_mask = 15
+script = ExtResource("1_bcqat")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1177060921]
+
+[node name="AnimationTree" type="AnimationTree" parent="." unique_id=522272226]
+
+[node name="Timers" type="Node" parent="." unique_id=1669037515]
+
+[node name="AttackTimer" type="Timer" parent="Timers" unique_id=240828637]

@@ -6,7 +6,9 @@
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_kkvp2"]
 
-[node name="Player" type="CharacterBody3D" unique_id=375625102]
+[node name="Player" type="CharacterBody3D" unique_id=375625102 groups=["Player"]]
+collision_layer = 2
+collision_mask = 29
 script = ExtResource("1_kkvp2")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1415048336]
@@ -20,30 +22,32 @@ max_limit_x = -0.2
 
 [node name="GodetteSkin" parent="." unique_id=2141942106 instance=ExtResource("3_rx582")]
 
-[node name="Skeleton3D" parent="GodetteSkin/Rig" parent_id_path=PackedInt32Array(2141942106, 712601168) index="0" unique_id=360648605]
-bones/1/position = Vector3(0, 0.3709384, 0)
-bones/4/rotation = Quaternion(-0.5505269, -0.05901952, -0.6473477, 0.523811)
-bones/5/rotation = Quaternion(3.6528675e-08, -3.93866e-08, -0.498244, 0.8670369)
-bones/7/rotation = Quaternion(-0.31868145, -0.33582297, 0.1422346, 0.87489116)
-bones/8/rotation = Quaternion(0.0014765536, 0.0014765438, -0.701665, 0.71250397)
-bones/9/rotation = Quaternion(-0.60965824, 0.07942966, 0.62170625, 0.48527232)
-bones/10/rotation = Quaternion(2.0991594e-08, 6.846549e-08, 0.5212927, 0.853378)
-bones/12/rotation = Quaternion(-0.31767696, 0.3110038, -0.22421964, 0.8672276)
-bones/13/rotation = Quaternion(0.0044326596, 0.0052210214, 0.702481, 0.7116695)
-bones/15/rotation = Quaternion(0.9899542, 0.08359763, 0.07847196, 0.082731605)
-bones/16/rotation = Quaternion(0.38357428, 5.932508e-08, -2.6268802e-07, 0.92351013)
-bones/17/rotation = Quaternion(-0.61549425, -0.20152366, 0.07464622, 0.75827646)
-bones/19/rotation = Quaternion(0.9918863, -0.033099465, 0.029912448, 0.11904351)
-bones/20/rotation = Quaternion(0.42888838, -5.976379e-08, 2.9883876e-07, 0.9033575)
-bones/21/rotation = Quaternion(-0.6419427, 0.112667024, -0.022376733, 0.75809973)
-bones/38/position = Vector3(0.52084064, 0.7686799, -0.057637356)
-bones/40/position = Vector3(-0.5108437, 0.76867986, 0.059736915)
+[node name="Skeleton3D" parent="GodetteSkin/Rig" parent_id_path=PackedInt32Array(2141942106, 1845660302) index="0" unique_id=150252682]
+bones/1/position = Vector3(0, 0.36877978, 0)
+bones/4/rotation = Quaternion(-0.5503946, -0.057549834, -0.6426763, 0.5298311)
+bones/5/rotation = Quaternion(2.4709772e-08, -5.4576898e-08, -0.50776917, 0.8614933)
+bones/7/rotation = Quaternion(-0.3198774, -0.33803442, 0.14600696, 0.87297946)
+bones/8/rotation = Quaternion(0.0013218708, 0.0013218655, -0.7022371, 0.71194077)
+bones/9/rotation = Quaternion(-0.6093035, 0.07804327, 0.6176797, 0.49105036)
+bones/10/rotation = Quaternion(3.507323e-08, 4.4306233e-08, 0.53046936, 0.84770423)
+bones/12/rotation = Quaternion(-0.31897068, 0.31374508, -0.22813945, 0.8647394)
+bones/13/rotation = Quaternion(0.0040484625, 0.004768492, 0.70288455, 0.71127653)
+bones/15/rotation = Quaternion(0.9894326, 0.08378654, 0.07883623, 0.08824976)
+bones/16/rotation = Quaternion(0.39818496, 5.932627e-08, -2.6793504e-07, 0.9173052)
+bones/17/rotation = Quaternion(-0.6231734, -0.200628, 0.07733412, 0.751946)
+bones/18/rotation = Quaternion(-2.2432162e-06, 0.92015594, -0.39155215, 5.9089143e-07)
+bones/19/rotation = Quaternion(0.99126047, -0.033459492, 0.029767811, 0.12408513)
+bones/20/rotation = Quaternion(0.4419858, -5.7998303e-08, 3.0951935e-07, 0.8970222)
+bones/21/rotation = Quaternion(-0.6490508, 0.11241262, -0.023644762, 0.75202227)
+bones/38/position = Vector3(0.52084064, 0.770384, -0.057637356)
+bones/40/position = Vector3(-0.5108437, 0.7703839, 0.059736915)
 
 [node name="RightHandSlot" parent="GodetteSkin/Rig/Skeleton3D" index="6" unique_id=1304016]
-transform = Transform3D(0.0031362604, -0.16336113, -0.98656094, -0.9999138, -0.012997248, -0.0010255913, -0.012655505, 0.9864801, -0.16338867, -0.4905427, 0.6209926, 0.10661908)
+transform = Transform3D(0.0028583133, -0.16219561, -0.9867541, -0.99992806, -0.011871626, -0.0009443335, -0.011561558, 0.9866867, -0.1622187, -0.49039903, 0.62323225, 0.107247256)
 
 [node name="LeftHandSlot" parent="GodetteSkin/Rig/Skeleton3D" index="7" unique_id=1988771779]
-transform = Transform3D(-8.554198e-07, 0.26286632, 0.9648317, 0.99987245, -0.0153242145, 0.0041770376, 0.015883643, 0.9647098, -0.26283354, 0.50727564, 0.6166581, -0.018515818)
+transform = Transform3D(3.7951395e-07, 0.2628652, 0.9648322, 0.99989736, -0.013720524, 0.003738887, 0.014221257, 0.96473426, -0.26283893, 0.5072715, 0.6187726, -0.017882286)
 
 [editable path="GodetteSkin"]
 [editable path="GodetteSkin/Rig/Skeleton3D/RightHandSlot/sword_1handed2"]
+[editable path="GodetteSkin/Rig/Skeleton3D/RightHandSlot/wand2"]
