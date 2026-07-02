@@ -37,11 +37,11 @@ func _defend_change(value: float) -> void:
 	
 func _switch_weapon(weapon_active: bool) -> void:
 	if weapon_active:
-		$Rig/Skeleton3D/RightHandSlot/sword_1handed2.show()
+		$Rig/Skeleton3D/RightHandSlot/Sword.show()
 		$Rig/Skeleton3D/RightHandSlot/wand2.hide()
 	else:
 		$Rig/Skeleton3D/RightHandSlot/wand2.show()
-		$Rig/Skeleton3D/RightHandSlot/sword_1handed2.hide()
+		$Rig/Skeleton3D/RightHandSlot/Sword.hide()
 		
 func _cast_spell() -> void:
 	if not attacking:
@@ -65,3 +65,6 @@ func _on_blink_timer_timeout() -> void:
 	await get_tree().create_timer(0.2).timeout
 	_change_face('default')
 	$BlinkTimer.wait_time = rng.randf_range(1.5, 3.0)
+	
+func _can_damage(value: bool):
+	$Rig/Skeleton3D/RightHandSlot/Sword.can_damage = value

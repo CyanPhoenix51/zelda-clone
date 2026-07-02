@@ -25,7 +25,10 @@ var defend := false:
 		if defend and not value:
 			skin._defend(false)
 		defend = value
-var weapon_active := false
+var weapon_active := true
+
+func _ready() -> void:
+	skin._switch_weapon(weapon_active)
 
 func _physics_process(delta: float) -> void:
 	_move_logic(delta)

@@ -43,10 +43,15 @@ func _melee_attack_animation() -> void:
 	$AnimationTree.set("parameters/AttackOneShot/request", AnimationNodeOneShot.ONE_SHOT_REQUEST_FIRE)
 
 
-func _on_area_3d_body_entered(body: Node3D) -> void:
+func _on_area_3d_body_entered(_body: Node3D) -> void:
 	if spinning:
 		await get_tree().create_timer(rng.randf_range(1.0, 2.0)).timeout
 		var tween = create_tween()
 		tween.tween_property(self, "speed", walk_speed, 0.5)
 		tween.tween_method(_spin_transition, 1.0, 0.0, 0.3)
 		$Timers/AttackTimer.start()
+
+func _hit():
+	if not $Timers/InvulTimer.time_left:
+		print("Boss was hit")
+		$Timers/InvulTimer.start()

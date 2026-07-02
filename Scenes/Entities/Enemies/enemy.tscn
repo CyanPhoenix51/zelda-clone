@@ -14,3 +14,7 @@ script = ExtResource("1_bcqat")
 [node name="Timers" type="Node" parent="." unique_id=1669037515]
 
 [node name="AttackTimer" type="Timer" parent="Timers" unique_id=240828637]
+
+[node name="InvulTimer" type="Timer" parent="Timers" unique_id=1290893302]
+wait_time = 0.8
+one_shot = true
